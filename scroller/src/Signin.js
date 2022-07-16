@@ -1,8 +1,17 @@
 import React from 'react'
 
-export default function Signin() {
+export default function Signin({setChar}) {
 
-
+const handleSubmit = (e) => {
+  e.preventDefault()
+  const sizes =['s','m','l']
+  setChar({
+    name: e.target.name,
+    color: e.target.color,
+    shot: Math.floor(Math.random() * 3),
+    shotSize: sizes[Math.floor(Math.random() * sizes.length)]
+  })
+}
 
 
   return (
