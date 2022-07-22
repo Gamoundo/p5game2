@@ -1,6 +1,20 @@
+body {
+  background-color: aqua;
+}
+
 .App {
   text-align: center;
+  justify-content: center;
 }
+
+.sign {
+  height: 11vh;
+  width: 13vw;
+  background-color: beige;
+  align-self: center;
+}
+
+
 
 .App-logo {
   height: 40vmin;
