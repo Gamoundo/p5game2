@@ -6,8 +6,8 @@ const handleSubmit = (e) => {
   e.preventDefault()
   const sizes =['s','m','l']
   setChar({
-    name: e.target.name,
-    color: e.target.color,
+    name: e.target.name.value,
+    color: e.target.color.value,
     shot: Math.floor(Math.random() * 3),
     shotSize: sizes[Math.floor(Math.random() * sizes.length)]
   })
