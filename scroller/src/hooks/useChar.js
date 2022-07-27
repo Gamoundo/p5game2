@@ -30,7 +30,6 @@ export default function useChar(x, y, setX, setY) {
         }
       }
   
-    return (
-    {movement}
-  )
+    return{movement}
+
 }
